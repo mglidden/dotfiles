@@ -1,0 +1,30 @@
+[user]
+	name = Mason Glidden
+	email = mglidden@yelp.com
+[color]
+	ui = true
+[core]
+	editor = /usr/bin/vim
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)<%an>%Creset %s %Cgreen(%cr)' --abbrev-commit --date=relative
+  s = status
+  ri = rebase -i master
+  a = add
+  rc = rebase --continue
+  c = commit
+  sh = show
+  d = diff
+  cp = cherry-pick
+  r = reset
+  l = log
+  g = grep
+  co = checkout
+  b = branch
+  mff = merge --ff-only
+  ds = diff --stat
+  sb = submodule
+  sbu = submodule --update --recursive
+[merge]
+	conflictstyle = diff3
+[push]
+	default = simple
