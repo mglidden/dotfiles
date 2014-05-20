@@ -18,6 +18,7 @@
   d = diff
   cp = cherry-pick
   r = reset
+  rhh = reset --hard HEAD
   l = log
   g = grep
   co = checkout
