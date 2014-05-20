@@ -8,9 +8,11 @@
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)<%an>%Creset %s %Cgreen(%cr)' --abbrev-commit --date=relative
   s = status
-  ri = rebase -i master
   a = add
+  rim = rebase -i master
+  ri = rebase -i
   rc = rebase --continue
+  ra = rebase --abort
   c = commit
   sh = show
   d = diff
