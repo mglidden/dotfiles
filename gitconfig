@@ -25,7 +25,7 @@
   mff = merge --ff-only
   ds = diff --stat
   sb = submodule
-  sbu = submodule --update --recursive
+  sbu = submodule update --recursive --init
 [merge]
 	conflictstyle = diff3
 [push]
