@@ -6,27 +6,29 @@
 [core]
 	editor = /usr/bin/vim
 [alias]
-	lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)<%an>%Creset %s %Cgreen(%cr)' --abbrev-commit --date=relative
-  s = status
   a = add
-  rim = rebase -i master
-  ri = rebase -i
-  rc = rebase --continue
-  ra = rebase --abort
-  c = commit
-  sh = show
-  d = diff
-  cp = cherry-pick
-  r = reset
-  rhh = reset --hard HEAD
-  l = log
-  g = grep
-  co = checkout
   b = branch
-  mff = merge --ff-only
+  c = commit
+  cp = cherry-pick
+  co = checkout
+  d = diff
   ds = diff --stat
+  g = grep
+  l = log
+  lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)<%an>%Creset %s %Cgreen(%cr)' --abbrev-commit --date=relative
+  mff = merge --ff-only
+  r = reset
+  ra = rebase --abort
+  rc = rebase --continue
+  rd = reset --hard
+  rhh = reset --hard HEAD
+  ri = rebase -i
+  rim = rebase -i master
+  s = status
   sb = submodule
   sbu = submodule update --recursive --init
+  sbs = submodule sync
+  sh = show
 [merge]
 	conflictstyle = diff3
 [push]
