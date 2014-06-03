@@ -20,7 +20,7 @@
   r = reset
   ra = rebase --abort
   rc = rebase --continue
-  rd = reset --hard
+  rh = reset --hard
   rhh = reset --hard HEAD
   ri = rebase -i
   rim = rebase -i master
