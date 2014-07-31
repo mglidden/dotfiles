@@ -17,6 +17,7 @@
   l = log
   lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)<%an>%Creset %s %Cgreen(%cr)' --abbrev-commit --date=relative
   mff = merge --ff-only
+  pom = pull origin master
   r = reset
   ra = rebase --abort
   rc = rebase --continue
@@ -29,6 +30,8 @@
   sbu = submodule update --recursive --init
   sbs = submodule sync
   sh = show
+  st = stash
+  stp = stash pop
 [merge]
 	conflictstyle = diff3
 [push]
