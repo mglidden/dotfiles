@@ -11,6 +11,7 @@
   c = commit
   cp = cherry-pick
   co = checkout
+  com = checkout master
   d = diff
   ds = diff --stat
   g = grep
