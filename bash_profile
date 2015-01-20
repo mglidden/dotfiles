@@ -10,3 +10,7 @@ source ~/.git-completion.bash
  
 export HISTCONTROL=ignoredups
 export HISTFILESIZE=100000
+
+alias pll='pod lib lint --sources=ssh://git@git.yelpcorp.com/ios/YelpSpecs,https://github.com/CocoaPods/Specs.git'
+alias pod='~/yelp/iphone/tools/pod'
+alias dnsflush='sudo killall -HUP mDNSResponder'
