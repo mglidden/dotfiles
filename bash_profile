@@ -16,4 +16,8 @@ alias dnsflush='sudo killall -HUP mDNSResponder'
 
 alias adb='/Users/mglidden/Library/Android/sdk/platform-tools/adb'
 
-export PATH=~/bin/:$PATH
+alias fea='FACTORY_EXTERNAL_ACCESS=allow vagrant reload'
+
+alias ec='git diff --name-only | uniq | xargs mate'
+
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
