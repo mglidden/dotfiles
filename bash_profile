@@ -21,3 +21,8 @@ alias fea='FACTORY_EXTERNAL_ACCESS=allow vagrant reload'
 alias ec='git diff --name-only | uniq | xargs subl'
 
 export MIDTERMS_SKIPPED_TESTS=cell-tests,clean,build,compiled-units,migrations
+
+export EDITOR=/usr/bin/vim
+
+export NVM_DIR="/Users/mglidden/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
