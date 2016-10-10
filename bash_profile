@@ -18,8 +18,6 @@ alias adb='/Users/mglidden/Library/Android/sdk/platform-tools/adb'
 
 alias fea='FACTORY_EXTERNAL_ACCESS=allow vagrant reload'
 
-alias ec='git diff --name-only | uniq | xargs mate'
-
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias ec='git diff --name-only | uniq | xargs subl'
 
 export MIDTERMS_SKIPPED_TESTS=cell-tests,clean,build,compiled-units,migrations
