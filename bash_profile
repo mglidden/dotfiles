@@ -18,7 +18,7 @@ alias adb='/Users/mglidden/Library/Android/sdk/platform-tools/adb'
 
 alias fea='FACTORY_EXTERNAL_ACCESS=allow vagrant reload'
 
-alias ec='git diff --name-only | uniq | xargs subl'
+alias ec='git diff --name-only | uniq | xargs mate'
 
 export MIDTERMS_SKIPPED_TESTS=cell-tests,clean,build,compiled-units,migrations
 
