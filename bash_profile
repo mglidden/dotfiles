@@ -28,3 +28,4 @@ export NVM_DIR="/Users/mglidden/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 alias g='git'
+export PATH="/usr/local/opt/postgresql/bin:$PATH"
