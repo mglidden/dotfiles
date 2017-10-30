@@ -11,21 +11,13 @@ source ~/.git-completion.bash
 export HISTCONTROL=ignoredups
 export HISTFILESIZE=100000
 
-alias pod='~/Dropbox/Projects/CocoaPods/Rainforest/CocoaPods/bin/pod'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 
-alias adb='/Users/mglidden/Library/Android/sdk/platform-tools/adb'
-
-alias fea='FACTORY_EXTERNAL_ACCESS=allow vagrant reload'
-
 alias ec='git diff --name-only | uniq | xargs mate'
-
-export MIDTERMS_SKIPPED_TESTS=cell-tests,clean,build,compiled-units,migrations
 
 export EDITOR=/usr/bin/vim
 
 export NVM_DIR="/Users/mglidden/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-alias g='git'
 export PATH="/usr/local/opt/postgresql/bin:$PATH"
