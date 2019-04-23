@@ -8,6 +8,8 @@ dotfiles="bash_profile git-completion.bash gitconfig vim vimrc"
 mkdir -p $backupdir
 
 for file in $dotfiles; do
-  mv ~/.$file $backupdir/
+  if [ -f $file ]; then
+    mv ~/.$file $backupdir/
+  fi
   ln -s $gitdir/$file ~/.$file
 done
