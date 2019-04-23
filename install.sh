@@ -13,3 +13,6 @@ for file in $dotfiles; do
   fi
   ln -s $gitdir/$file ~/.$file
 done
+
+mkdir -p ~/Library/Application\ Support/iTerm2/DynamicProfiles
+ln -s $gitdir/iTermProfile ~/Library/Application\ Support/iTerm2/DynamicProfiles/Imported
