@@ -20,4 +20,8 @@ export EDITOR=/usr/bin/vim
 export NVM_DIR="/Users/mglidden/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export PATH="/usr/local/opt/postgresql/bin:$PATH"
+export PATH="/usr/local/opt/postgresql/bin:/opt/apache-maven/bin:$PATH"
+
+complete -C /usr/local/bin/mc mc
+
+source ~/tulip/tulip/scripts/setPaths.source.sh
