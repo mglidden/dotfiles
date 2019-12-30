@@ -35,3 +35,5 @@ export NVM_DIR="/Users/mglidden/.nvm"
 export PATH="/usr/local/opt/postgresql/bin:/opt/apache-maven/bin:$PATH"
 
 source ~/tulip/tulip/scripts/setPaths.source.sh
+
+autoload -U +X bashcompinit && bashcompinit
