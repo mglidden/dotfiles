@@ -16,3 +16,4 @@ done
 
 mkdir -p ~/Library/Application\ Support/iTerm2/DynamicProfiles
 ln -s $gitdir/iTermProfile ~/Library/Application\ Support/iTerm2/DynamicProfiles/Imported
+ln -s $gitdir/settings.json ~/Library/Application\ Support/Code/User/settings.json

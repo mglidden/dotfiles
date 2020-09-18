@@ -1,0 +1,65 @@
+{
+    "javascript.validate.enable": false,
+    "eslint.nodePath": "/Users/mglidden/tulip/tulip/environments/node_modules",
+    "eslint.runtime": "{/Users/mglidden/.tulip-nvm/versions/node/{{node version}}/bin/node",
+    "eslint.options": {
+        "rulePaths": [  "/Users/mglidden/tulip/tulip/tools/eslint-rules/lib/rules" ],
+        "ignorePath": "/Users/mglidden/tulip/tulip/environments/.eslintignore"
+    },
+    "workbench.colorTheme": "Monokai",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.wordBasedSuggestions": false,
+    "editor.rulers": [
+        100,
+        120
+    ],
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": true,
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": true,
+    "window.zoomLevel": -1,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/.meteor/local": true
+    },
+    "flow.useLSP": true,
+    "flow.useNPMPackagedFlow": true,
+    "workbench.colorCustomizations": {
+        "editorWarning.foreground": "#FFF000",
+        "editorWarning.border": "#BBB000",
+        "editorError.foreground": "#FF0000",
+        "editorError.border": "#BB0000"
+    },
+    "tslint.configFile": "/Users/mglidden/tulip/tulip/environments/tslint.json",
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "go.toolsGopath": "/Users/mglidden/go",
+    "go.inferGopath": false,
+    "go.testFlags": [
+        "-v",
+        "-race"
+    ],
+    "go.coverOnSingleTest": true,
+    "go.testTimeout": "60s",
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast"
+    ],
+    "go.lintOnSave": "package",
+    "go.liveErrors": {
+        "enabled": false,
+        "delay": 500
+    },
+    "go.formatTool": "goimports",
+    "go.formatFlags": ["-local", "tulip/"],
+    "go.testEnvVars": {
+        "GIN_MODE": "test",
+    },
+}
