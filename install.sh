@@ -3,7 +3,7 @@
 
 gitdir=~/dotfiles
 backupdir=~/dotfiles_backup  # will move any existing files here
-dotfiles="bash_profile git-completion.bash gitconfig vim vimrc"
+dotfiles="bash_profile git-completion.bash gitconfig vim vimrc zshrc"
 
 mkdir -p $backupdir
 
