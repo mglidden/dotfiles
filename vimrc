@@ -29,12 +29,8 @@ set shell=/bin/bash
 if has("gui_running")
   set guioptions-=T
   set t_Co=256
-  set background=dark
-  colorscheme peaksea
   set nonu
 else
-  colorscheme zellner
-  set background=dark
   set nonu
 endif
 
