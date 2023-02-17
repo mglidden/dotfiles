@@ -37,3 +37,10 @@ export PATH="/usr/local/opt/postgresql/bin:/opt/apache-maven/bin:$PATH"
 source ~/tulip/tulip/scripts/setPaths.source.sh
 
 autoload -U +X bashcompinit && bashcompinit
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="/usr/local/opt/awscli@1/bin:/usr/local/sbin:$PATH"
+
+export GOPATH=$HOME/go
+export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH

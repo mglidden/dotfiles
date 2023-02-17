@@ -25,3 +25,4 @@ export PATH="/usr/local/opt/postgresql/bin:/opt/apache-maven/bin:$PATH"
 complete -C /usr/local/bin/mc mc
 
 source ~/tulip/tulip/scripts/setPaths.source.sh
+. "$HOME/.cargo/env"

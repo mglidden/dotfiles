@@ -17,7 +17,6 @@
     "editor.minimap.enabled": true,
     "editor.renderWhitespace": "boundary",
     "files.trimTrailingWhitespace": true,
-    "window.zoomLevel": -1,
     "files.insertFinalNewline": true,
     "files.exclude": {
         "**/.git": true,
@@ -62,4 +61,5 @@
     "go.testEnvVars": {
         "GIN_MODE": "test",
     },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
 }
