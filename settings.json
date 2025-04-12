@@ -8,7 +8,7 @@
     },
     "workbench.colorTheme": "Monokai",
     "editor.acceptSuggestionOnEnter": "smart",
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.rulers": [
         100,
         120
@@ -62,4 +62,5 @@
         "GIN_MODE": "test",
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "cline.enableCheckpoints": false,
 }

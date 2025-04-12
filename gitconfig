@@ -14,7 +14,7 @@
   cn = commit --no-verify
   cp = cherry-pick
   co = checkout
-  com = checkout master
+  com = checkout main
   d = diff
   ds = diff --stat
   g = grep
@@ -22,15 +22,15 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)<%an>%Creset %s %Cgreen(%cr)' --abbrev-commit --date=relative
   mff = merge --ff-only
   poh = push origin HEAD
-  pom = pull origin master
+  pom = pull origin main
   r = reset
   ra = rebase --abort
   rc = rebase --continue
   rh = reset --hard
   rhh = reset --hard HEAD
   ri = rebase -i
-  rim = rebase -i master
-  riom = rebase -i origin/master
+  rim = rebase -i main
+  riom = rebase -i origin/main
   s = status
   sb = submodule
   sbu = submodule update --recursive --init

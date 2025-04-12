@@ -26,3 +26,5 @@ complete -C /usr/local/bin/mc mc
 
 source ~/tulip/tulip/scripts/setPaths.source.sh
 . "$HOME/.cargo/env"
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH #InstallDevDeps
+export GOPATH=$HOME/go; export PATH=$GOPATH/bin:$PATH #InstallDevDeps

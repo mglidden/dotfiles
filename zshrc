@@ -34,8 +34,6 @@ export NVM_DIR="/Users/mglidden/.nvm"
 
 export PATH="/usr/local/opt/postgresql/bin:/opt/apache-maven/bin:$PATH"
 
-source ~/tulip/tulip/scripts/setPaths.source.sh
-
 autoload -U +X bashcompinit && bashcompinit
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -44,3 +42,10 @@ export PATH="/usr/local/opt/awscli@1/bin:/usr/local/sbin:$PATH"
 
 export GOPATH=$HOME/go
 export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
