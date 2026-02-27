@@ -29,9 +29,6 @@ alias ec='git diff --name-only | uniq | xargs mate'
 
 export EDITOR=/usr/bin/vim
 
-export NVM_DIR="/Users/mglidden/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 export PATH="/usr/local/opt/postgresql/bin:/opt/apache-maven/bin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
@@ -45,7 +42,17 @@ export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+nvm() {
+  unfunction nvm node npm npx
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+  nvm "$@"
+}
+node() { nvm; node "$@" }
+npm() { nvm; npm "$@" }
+npx() { nvm; npx "$@" }
 
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/mglidden/.antigravity/antigravity/bin:$PATH"
