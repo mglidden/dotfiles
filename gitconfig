@@ -14,7 +14,8 @@
   cn = commit --no-verify
   cp = cherry-pick
   co = checkout
-  com = checkout main
+  defb = !git symbolic-ref --short refs/remotes/origin/HEAD 2>/dev/null | sed 's@^origin/@@' || echo main
+  com = !git checkout "$(git defb)"
   d = diff
   ds = diff --stat
   g = grep
@@ -22,15 +23,15 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)<%an>%Creset %s %Cgreen(%cr)' --abbrev-commit --date=relative
   mff = merge --ff-only
   poh = push origin HEAD
-  pom = pull origin main
+  pom = !git pull origin "$(git defb)"
   r = reset
   ra = rebase --abort
   rc = rebase --continue
   rh = reset --hard
   rhh = reset --hard HEAD
   ri = rebase -i
-  rim = rebase -i main
-  riom = rebase -i origin/main
+  rim = !git rebase -i "$(git defb)"
+  riom = !git rebase -i "origin/$(git defb)"
   s = status
   sb = submodule
   sbu = submodule update --recursive --init
